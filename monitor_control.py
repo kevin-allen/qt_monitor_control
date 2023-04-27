@@ -20,7 +20,7 @@ class AnotherWindow(QWidget):
         self.setWindowTitle("Monitor control {}".format(index))
 
         self.label = QLabel("")
-        imageFileName="/home/kevin/Pictures/beaumont_rag_billy_lick.png"
+        imageFileName="beaumont_rag_billy_lick.png"
         pixmap = QPixmap(imageFileName) # we create a pixmap that will go on the label
         self.label.setPixmap(pixmap.scaled(self.label.size(), Qt.IgnoreAspectRatio)) # scale the pixmax to the size of the label
         
@@ -44,7 +44,7 @@ class AnotherWindow(QWidget):
         Function to change the image on the label
         """
         if imageFileName is None: 
-            imageFileName="/home/kevin/Pictures/bioRxiv.png"
+            imageFileName="bioRxiv.png"
             
         pixmap = QPixmap(imageFileName) # we create a pixmap that will go on the label
         self.label.setPixmap(pixmap.scaled(self.label.size(), Qt.IgnoreAspectRatio)) # scale the pixmax to the size of the label
